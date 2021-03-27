@@ -77,6 +77,7 @@ module.exports = {
 		hot: true,
 		publicPath: "/",
 		host: "0.0.0.0",
+		disableHostCheck: true,
 	},
 
 	plugins: [new CleanWebpackPlugin(), new HtmlWebpackPlugin({ template: "./public/index.html" }), new webpack.ProvidePlugin({ React: "react" }), new webpack.HotModuleReplacementPlugin(), new webpack.optimize.SplitChunksPlugin({ name: "vendor" })],
